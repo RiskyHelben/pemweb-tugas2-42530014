@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<a href="/" class="back">&larr; Kembali ke katalog</a>
+
+<article class="detail">
+  <img class="detail-poster" src="/images/<%= film.image %>" alt="Poster <%= film.title %>">
+  <div class="detail-info">
+    <span class="badge"><%= film.genre %></span>
+    <h1><%= film.title %></h1>
+    <p class="meta">Sutradara: <strong><%= film.director %></strong></p>
+    <p class="meta">Tahun rilis: <strong><%= film.year %></strong></p>
+    <h3>Sinopsis</h3>
+    <p><%= film.synopsis %></p>
+  </div>
+</article>
+
+<%- include('partials/footer') %>

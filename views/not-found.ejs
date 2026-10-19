@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<div class="empty">
+  <h1>404 - Data Tidak Ditemukan</h1>
+  <% if (requestedId) { %>
+    <p>Film dengan ID "<%= requestedId %>" tidak ada di katalog.</p>
+  <% } else { %>
+    <p>Halaman yang kamu cari tidak tersedia.</p>
+  <% } %>
+  <a class="btn" href="/">Kembali ke Katalog</a>
+</div>
+
+<%- include('partials/footer') %>

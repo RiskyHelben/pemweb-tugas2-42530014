@@ -1,0 +1,34 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; background: #0f1117; color: #e5e7eb; line-height: 1.6; }
+
+.navbar { background: #171a23; padding: 14px 24px; display: flex; gap: 20px; align-items: center; border-bottom: 2px solid #e50914; }
+.navbar a { color: #fff; text-decoration: none; }
+.brand { font-weight: bold; font-size: 1.2rem; margin-right: auto; }
+
+.container { max-width: 1000px; margin: 24px auto; padding: 0 16px; min-height: 70vh; }
+h1 { margin-bottom: 16px; }
+
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
+.chip { padding: 6px 16px; border-radius: 20px; background: #1f2330; color: #e5e7eb; text-decoration: none; border: 1px solid #2d3242; }
+.chip.active { background: #e50914; border-color: #e50914; color: #fff; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.card { background: #171a23; border-radius: 10px; overflow: hidden; border: 1px solid #262b3a; }
+.poster { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; }
+.card-body { padding: 14px; }
+.card h2 { margin: 8px 0 4px; font-size: 1.05rem; }
+.meta { color: #9ca3af; margin-bottom: 6px; }
+
+.badge { background: #3b1218; color: #fca5a5; padding: 2px 10px; border-radius: 12px; font-size: .8rem; }
+.btn { display: inline-block; margin-top: 10px; background: #e50914; color: #fff; padding: 8px 14px; border-radius: 6px; text-decoration: none; }
+.btn:hover { background: #b20710; }
+
+.back { display: inline-block; margin-bottom: 14px; color: #f87171; text-decoration: none; }
+
+.detail { display: flex; gap: 28px; background: #171a23; padding: 22px; border-radius: 10px; border: 1px solid #262b3a; flex-wrap: wrap; }
+.detail-poster { width: 300px; max-width: 100%; border-radius: 8px; aspect-ratio: 2 / 3; object-fit: cover; }
+.detail-info { flex: 1; min-width: 240px; }
+.detail h3 { margin-top: 16px; }
+
+.empty { text-align: center; background: #171a23; padding: 30px; border-radius: 10px; }
+.footer { background: #171a23; color: #9ca3af; text-align: center; padding: 16px; font-size: .9rem; border-top: 1px solid #262b3a; }

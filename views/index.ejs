@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+<h1>Katalog Film</h1>
+
+<div class="filters">
+  <a href="/" class="chip <%= selectedGenre === '' ? 'active' : '' %>">Semua</a>
+  <% genres.forEach(function(g) { %>
+    <a href="/?genre=<%= g %>"
+       class="chip <%= selectedGenre.toLowerCase() === g.toLowerCase() ? 'active' : '' %>">
+      <%= g %>
+    </a>
+  <% }) %>
+</div>
+
+<% if (films.length === 0) { %>
+  <p class="empty">Tidak ada film untuk genre "<%= selectedGenre %>".</p>
+<% } else { %>
+  <div class="grid">
+    <% films.forEach(function(film) { %>
+      <article class="card">
+        <img class="poster" src="/images/<%= film.image %>" alt="Poster <%= film.title %>">
+        <div class="card-body">
+          <span class="badge"><%= film.genre %></span>
+          <h2><%= film.title %></h2>
+          <p class="meta"><%= film.director %> &bull; <%= film.year %></p>
+          <a class="btn" href="/item/<%= film.id %>">Lihat Detail</a>
+        </div>
+      </article>
+    <% }) %>
+  </div>
+<% } %>
+
+<%- include('partials/footer') %>
