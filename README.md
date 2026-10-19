@@ -3,7 +3,7 @@
 Nama: Yohanes Risky Putra Helben Mbira
 NIM: 42530014
 
-Video penjelasan: https://www.youtube.com/watch?v=ID_VIDEO
+Video penjelasan: https://youtu.be/L7cKx06INM8
 
 ## Cara menjalankan
 
